@@ -1,4 +1,4 @@
-// Show Chicago's weather in the widget
+// PART ONE - Show Chicago's weather in the widget:
 // let getWeather = function() {
 // let latitude = '41.8781';
 // let longitude = '-87.6298';
@@ -8,7 +8,29 @@
 // openweathermap_api_url +='&appid=4ce6f502d38ddae567bf1702b05e168c&units=imperial'
 //
 // fetch(openweathermap_api_url).then(convertToJSON).then(updateWeather).catch(displayError);
+//
+// let link = document.getElementById("get_forecast")
+//   link.addEventListener("click", getWeather);
+//
+// let convertToJSON = function(response) {
+//   return response.json();
 // }
+//
+// let updateWeather = function(dataFromService) {
+//   city = dataFromService.name;
+//   temp = dataFromService.main.temp;
+//   icon = dataFromService.weather[0].icon;
+//   document.querySelector('.card-title').innerHTML = city;
+//   document.querySelector('.card-text').innerHTML = "It is " + temp + " degrees outside";
+//   document.querySelector('.card-img-top').src = "http://openweathermap.org/img/w/" + icon + ".png";
+// }
+//
+// let displayError = function(error) {
+// console.debug(error)
+// window.alert("Oops! Something went wrong.");
+// }
+
+// PART TWO - GEOLOCATION
 
 // Define latitude and longitude
 let latitude = '';
@@ -49,8 +71,6 @@ fetch(openweathermap_api_url).then(convertToJSON).then(updateWeather).catch(disp
     document.querySelector('.card-title').innerHTML = city;
     document.querySelector('.card-text').innerHTML = "It is " + temp + " degrees outside";
     document.querySelector('.card-img-top').src = "http://openweathermap.org/img/w/" + icon + ".png";
-    // Weather icon example: http://openweathermap.org/img/w/10d.png
-    // The very last part ('10d.png') can change based on the current conditions.
 }
 
 // Display error message
