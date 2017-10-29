@@ -5,8 +5,9 @@
 // let openweathermap_api_url = 'https://api.openweathermap.org/data/2.5/weather?'
 // openweathermap_api_url += 'lat=' + latitude
 // openweathermap_api_url += '&lon=' + longitude
+// console.debug("Latitude: " + latitude+", Longitude: "+longitude);
 // openweathermap_api_url +='&appid=4ce6f502d38ddae567bf1702b05e168c&units=imperial'
-//
+/
 // fetch(openweathermap_api_url).then(convertToJSON).then(updateWeather).catch(displayError);
 //
 // let link = document.getElementById("get_forecast")
@@ -21,7 +22,7 @@
 //   temp = dataFromService.main.temp;
 //   icon = dataFromService.weather[0].icon;
 //   document.querySelector('.card-title').innerHTML = city;
-//   document.querySelector('.card-text').innerHTML = "It is " + temp + " degrees outside";
+//   document.querySelector('.card-text').innerHTML = "It is " + temp + " degrees outside.";
 //   document.querySelector('.card-img-top').src = "http://openweathermap.org/img/w/" + icon + ".png";
 // }
 //
@@ -69,7 +70,7 @@ fetch(openweathermap_api_url).then(convertToJSON).then(updateWeather).catch(disp
     temp = dataFromService.main.temp;
     icon = dataFromService.weather[0].icon;
     document.querySelector('.card-title').innerHTML = city;
-    document.querySelector('.card-text').innerHTML = "It is " + temp + " degrees outside";
+    document.querySelector('.card-text').innerHTML = "It is " + temp + " degrees outside.";
     document.querySelector('.card-img-top').src = "http://openweathermap.org/img/w/" + icon + ".png";
 }
 
