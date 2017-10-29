@@ -11,8 +11,16 @@ function handlePosition (info) {
 }
 
 // Default location to Chicago:
-  // let latitude = '41.8781';
-  // let longitude = '-87.6298';
+// let getWeather = function() {
+// let latitude = '41.8781';
+// let longitude = '-87.6298';
+// let openweathermap_api_url = 'https://api.openweathermap.org/data/2.5/weather?'
+// openweathermap_api_url += 'lat=' + latitude
+// openweathermap_api_url += '&lon=' + longitude
+// openweathermap_api_url +='&appid=4ce6f502d38ddae567bf1702b05e168c&units=imperial'
+//
+// fetch(openweathermap_api_url).then(convertToJSON).then(updateWeather).catch(displayError);
+// }
 
 // Fetch API info, then convert to JSON, update weather on page
 let getWeather = function() {
